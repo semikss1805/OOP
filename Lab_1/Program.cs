@@ -12,8 +12,8 @@ namespace Lab_1
         {
             int[] r = Array.ConvertAll(Console.ReadLine().Trim().Split(), int.Parse),
                 dim = Dimension(r);
-            int[][] h = new int[dim[0]][];
-            Array.Sort(h);
+            int[,] h = new int[dim[0], dim[1]];
+            FillArr(ref h, r);
         }
 
         static int[] Dimension (int[] r)
