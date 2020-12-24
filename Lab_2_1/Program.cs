@@ -16,6 +16,7 @@ namespace Lab_2
             Console.WriteLine("Введiть номер елемента в прогресiї");
             int i = int.Parse(Console.ReadLine());
             Console.WriteLine("{0} - заданий член прогресiї", m[i]);
+            Console.ReadKey();
         }
     }
 }
